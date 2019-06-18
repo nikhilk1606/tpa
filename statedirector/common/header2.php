@@ -1,0 +1,108 @@
+<?php
+session_start();
+include_once("include/settings.php");
+include_once("include/functions.php");
+$user     = new User();
+$id      = $_SESSION['id'];
+
+ /*$sql3 = "SELECT * FROM `player_sanction` WHERE `id`=$id";
+	
+	$result3=mysqli_query($con,$sql3);
+	 $row3=mysqli_fetch_array($result3);
+	 	  $fname=$row3['first_name'];
+	 	  $lname=$row3['last_name'];*/
+
+          ?>
+	 	  <div class="main-header">
+	<div class="header-top">
+        <div class="container">
+        	<div class="row">
+                <div class="col-xs-12 col-sm-12">
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="header-top-left">
+                            <p>
+                                <i class="fa fa-phone"></i>
+                                <a href="tel:123.999.9988">123.999.9988</a>
+                            </p>
+                            <p>
+                               <i class="fa fa-envelope"></i>
+                                <a href="mailto:info@theplayersassociation.com">
+                                    info@theplayersassociation.com
+                                </a>
+                            </p>
+                        </div> 
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <!-- <p class="right"><a href="#my-account.php">My Account</a>  |  <a href="#sign-up.php">Sign Up</a>  |  <a href="#help.php">Help</a>  |  <a href="#careers.php">Careers</a> </p> -->
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <p class="clock">
+                            <i class="fa fa-clock-o"></i> Hours : 09:00am - 05:00pm (Sat/Sun :Closed)
+                        </p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+	<div class="header-mid">
+        <div class="container">
+        	<div class="top-logo">
+            	<a href="../index.php"><img src="images/logo.png" alt="Logo"></a>
+            </div>
+            <div class="top-right1 clearfix"> 
+            	<form class="top-search">
+                	<input type="text" value="" name="" placeholder="Search" class="form-control" />
+                	<input type="submit" value="" name="" class="btn" />
+                </form>
+            </div>
+        </div>
+    </div>
+	<div class="top-nav">
+        <div class="container">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="../index.php" <?php if($page_name=="index.php"){?> class="active"<?php }?>>Home</a></li>
+                            <li><a href="../shop.php" <?php if($page_name=="shop.php"){?> class="active"<?php }?>>Shop</a></li>
+                            <li><a href="../tournament-schedule.php" <?php if($page_name=="tournament-schedule.php"){?> class="active"<?php }?>>Tournament Schedule</a></li>
+                            <li><a href="../team-membership.php" <?php if($page_name=="team-membership.php"){?> class="active"<?php }?>>Team Membership</a></li>
+                            <li><a href="../sanction-player.php" <?php if($page_name=="sanction-player.php"){?> class="active"<?php }?>>Sanction Player</a></li>
+                            <li><a href="../umpire-membership.php" <?php if($page_name=="umpire-membership.php"){?> class="active"<?php }?>>umpire membership</a></li>
+                            <li><a href="state_director_login.php" <?php if($page_name=="state_director_login.php"){?> class="active"<?php }?>>State Director</a></li>
+                            <li><a href="#county-community.php" <?php if($page_name=="county-community.php"){?> class="active"<?php }?>>County Community</a></li>
+                            <li><a href="../logout.php" >Log Out</a></li>
+                            
+                          </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+<div id="ctl00_ucLoggedin_LoggedInContainer" class="LoggedInContainer">
+	    <div class="container">
+	        <div class="col-md-3 col-sm-12">
+	            <span id="ctl00_ucLoggedin_lblLoggedInName" class="LoggedInName"><!--  Welcome, <?php echo $fname." ".$lname ?>  --> </span>
+	        </div>
+	        <div class="col-md-9 col-sm-12">
+	            <ul>
+	                <!-- <li id="ctl00_ucLoggedin_tabUserHome"><a id="ctl00_ucLoggedin_lnkReturnUserHome" class="LoggedInLink" href="user-home.php">Return to User Home</a></li>
+	                <li><a id="ctl00_ucLoggedin_lnkUpdateInfo" class="LoggedInLink" href="update-user-info.php">Update User Info</a></li>
+	                <li id="ctl00_ucLoggedin_tabUmpire" style="background-color:#501573;"><a id="ctl00_ucLoggedin_lnkUmpire" class="LoggedInLink" href="#Umpire/UmpireHome.aspx">Umpire Actions</a></li>
+	                <li id="ctl00_ucLoggedin_tabUIC" style="background-color:#A3561E;"><a id="ctl00_ucLoggedin_lnkUIC" class="LoggedInLink" href="#UIC/UICHome.aspx">UIC Actions</a></li>  -->
+                    
+	               <!--  <li><a id="ctl00_ucLoggedin_lbLogOut" class="LoggedInLink f-right" href="logout.php" >Log Out</a></li> -->
+	                
+	            </ul>
+	        </div>
+	    </div>
+	</div>
+</div>

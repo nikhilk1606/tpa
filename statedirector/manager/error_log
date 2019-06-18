@@ -1,0 +1,5 @@
+[06-Mar-2019 06:36:48 UTC] PHP Fatal error:  Call to undefined function msyqli_fetch_array() in /home/tech599/public_html/tech599.com/johnonk/the-players-association/v1/statedirector/manager/profile_change.php on line 21
+[06-Mar-2019 06:36:49 UTC] PHP Fatal error:  Call to undefined function msyqli_fetch_array() in /home/tech599/public_html/tech599.com/johnonk/the-players-association/v1/statedirector/manager/profile_change.php on line 21
+[06-Mar-2019 06:37:20 UTC] PHP Fatal error:  Call to undefined function msqli_fetch_array() in /home/tech599/public_html/tech599.com/johnonk/the-players-association/v1/statedirector/manager/profile_change.php on line 21
+[06-Mar-2019 06:37:22 UTC] PHP Fatal error:  Call to undefined function msqli_fetch_array() in /home/tech599/public_html/tech599.com/johnonk/the-players-association/v1/statedirector/manager/profile_change.php on line 21
+[06-Mar-2019 06:37:24 UTC] PHP Fatal error:  Call to undefined function msqli_fetch_array() in /home/tech599/public_html/tech599.com/johnonk/the-players-association/v1/statedirector/manager/profile_change.php on line 21
