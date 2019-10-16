@@ -5,7 +5,7 @@ define('DB_SERVER','localhost');
 define('DB_USERNAME','tech599_players');
 define('DB_PASSWORD','HWH24qW4AJ4x');
 define('DB_DATABASE','tech599_theplayersassociation');
-$sitepath="http://tech599.com/~tech599/tech599.com/johnonk/the-players-association/v1/admin/uploads/download.jpg";
+$sitepath="http://tech599.com/~tech599/tech599.com/johnonk/the-players-association/v1/admin/";
 class DB_Class {
 	function __construct() 
 	{
